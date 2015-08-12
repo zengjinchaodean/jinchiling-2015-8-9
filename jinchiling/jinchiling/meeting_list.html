@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="css/meeting_list.css"> -->
+	<link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+	<title>会议列表</title>
+	</head>
+
+	<body style="background-color:#f2f2f2;">
+	<nav class="navbar navbar-default " style="background-color: #122539;">
+		  <div class="container home_top">
+		  <a href="javascript:history.go(-1);">
+		  	<span class="glyphicon glyphicon-menu-left" style="left:1rem;color:#fff;"></span>
+		  </a>
+		   会议
+		  </div>
+	</nav>	
+	<div class="meeting-top">
+
+	  <!-- Nav tabs -->
+	  <ul class="nav nav-tabs meeting-top-list" role="tablist" style="width: 100%;">
+	    <li role="presentation" class="active col-md-4" style="width: 33%;"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" class=" a1 meeting_top_tab">未签会议</a></li>
+	    <li role="presentation" class="li-a2 col-md-4" style="width: 34%;"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class=" a2 meeting_top_tab"><div class="meeting_border_left"></div>已签会议<div class="meeting_border_right"></div></a></li>
+	    <li role="presentation" class="col-md-4" style="width: 33%;"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" class=" a3 meeting_top_tab">全部会议</a></li>
+	  </ul>
+
+	  <!-- Tab panes -->
+	  <div class="tab-content meeting_content">
+	    <div role="tabpanel" class="tab-pane active" id="home">
+	    	<ul class="meeting_info_ul">
+	    		<li>
+	    			<span class="meeting_title">2015年深圳第18届中华文化日</span>
+	    			<div class="meeting_state_block"><div class="meeting_state1"></div>签到</div>
+	    		</li>
+	    		<li><h5>摘要</h5><span class="meeting_date">知之为知之不知为不知是知也123456</span><span class="meeting_time">2015-8-8</span></li>
+	    	</ul>
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="profile">
+	    	<ul class="meeting_info_ul">
+	    		<li><span class="meeting_title">2015年深圳第18届中华文化日</span><div class="meeting_state_block"><div class="meeting_state2"></div>过期</div></li>
+	    		<li><h5>摘要</h5><span class="meeting_date">2015年深圳第18届中华文化日</span><span class="meeting_time">2015-8-8</span></li>
+	    	</ul>
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="messages">
+	    	<ul class="meeting_info_ul">
+	    		<li><span class="meeting_title">2015年深圳第18届中华文化日</span><div class="meeting_state_block"><div class="meeting_state1"></div>签到</div></li>
+	    		<li><h5>摘要</h5><span class="meeting_date">2015年深圳第18届中华文化日</span><span class="meeting_time">2015-8-8</span></li>
+	    	</ul>
+	    	<ul class="meeting_info_ul">
+	    		<li><span class="meeting_title">2015年深圳第18届中华文化日</span><div class="meeting_state_block"><div class="meeting_state2"></div>过期</div></li>
+	    		<li><h5>摘要</h5><span class="meeting_date">2015年深圳第18届中华文化日</span><span class="meeting_time">2015-8-8</span></li>
+	    	</ul>
+	    </div>
+	  </div>
+
+	</div>
+	<div class="container">
+	  <ul class="nav navbar-nav navbar-fixed-bottom w bgf8 index-footer">
+       <li class="col-md-3 " style="width: 20%;"> <a href="index.html"><img src="images/home.png" class="footer_images_1" /><h4>首页</h4></a></li>
+        <li class="col-md-3 on" style="width: 20%;"><a href="meeting_list.html"><img src="images/meeting.png" class="footer_images_1" /><h4>会议</h4></a></li>
+        <li class="col-md-3" style="width: 20%;"><a href="#"><img src="images/travel.png" class="footer_images_1" /><h4>旅游</h4></a></li>
+        <li class="col-md-3" style="width: 20%;"><a href="per_center.html"><img src="images/per.png" class="footer_images_1" /><h4>个人中心</h4></a></li>
+        <li class="col-md-3" style="width: 20%;"><a href="#"><img src="images/more.png" class="footer_images_1" style="height: 50%;width: 50%;margin-top: 1rem;padding-bottom: 0.4rem;"/><h4>更多</h4></a></li>
+      </ul>
+     </div>
+	<script src="jquery-1.11.3.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(".meeting_date").each(function(){
+		var maxwidth=10;
+		if($(this).text().length>maxwidth){
+		$(this).text($(this).text().substring(0,maxwidth));
+		$(this).html($(this).html()+'...');
+		}
+		});
+		$('#myTabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+		$('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+		$('#myTabs a:first').tab('show') // Select first tab
+		$('#myTabs a:last').tab('show') // Select last tab
+		$('#myTabs li:eq(2) a').tab('show') 
+	</script>
+</body>
+</html>

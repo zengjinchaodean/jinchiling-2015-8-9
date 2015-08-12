@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="css/meeting_list.css"> -->
+	<link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+	<title>考试列表</title>
+	</head>
+
+	<body style="background-color:#f2f2f2;">
+	<nav class="navbar navbar-default " style="background-color: #081b26;">
+		  <div class="container home_top">
+		  <a href="javascript:history.go(-1);">
+		  	<span class="glyphicon glyphicon-menu-left" style="left:1rem;color:#fff;"></span>
+		  </a>
+		   考试
+		  </div>
+	</nav>
+	<div class="meeting-top">
+
+	  <!-- Nav tabs -->
+	  <ul class="nav nav-tabs meeting-top-list" role="tablist" style="width: 100%;">
+	    <li role="presentation" class="active col-md-4" style="width: 33%;"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" class=" a1 meeting_top_tab">未考试卷</a></li>
+	    <li role="presentation" class="li-a2 col-md-4" style="width: 34%;"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class=" a2 meeting_top_tab"><div class="meeting_border_left"></div>已考试卷<div class="meeting_border_right"></div></a></li>
+	    <li role="presentation" class="col-md-4" style="width: 33%;"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" class=" a3 meeting_top_tab">全部试卷</a></li>
+	  </ul>
+
+	  <!-- Tab panes -->
+	  <div class="tab-content meeting_content">
+	    <div role="tabpanel" class="tab-pane active" id="home">
+	    	<ul class="meeting_info_ul">
+	    		<li>
+	    			<span class="meeting_title">2015年深圳第18届中华文化日</span>
+	    			<div class="exm_state1">立即考试</div>
+	    		</li>
+	    		<li><h5>摘要</h5><span class="meeting_date">知之为知之不知为不知是知也123456</span><span class="meeting_time">2015-8-8</span></li>
+	    	</ul>
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="profile">
+	    	<ul class="meeting_info_ul">
+	    		<li><span class="meeting_title">2015年深圳第18届中华文化日</span><div class="exm_state2">98分</div></li>
+	    		<li><h5>摘要</h5><span class="meeting_date">2015年深圳第18届中华文化日</span><span class="meeting_time">2015-8-8</span></li>
+	    	</ul>
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="messages">
+			<ul class="meeting_info_ul">
+	    		<li>
+	    			<span class="meeting_title">2015年深圳第18届中华文化日</span>
+	    			<div class="exm_state1">立即考试</div>
+	    		</li>
+	    		<li><h5>摘要</h5><span class="meeting_date">知之为知之不知为不知是知也123456</span><span class="meeting_time">2015-8-8</span></li>
+	    	</ul>
+	    	<ul class="meeting_info_ul">
+	    		<li><span class="meeting_title">2015年深圳第18届中华文化日</span><div class="exm_state2">98分</div></li>
+	    		<li><h5>摘要</h5><span class="meeting_date">2015年深圳第18届中华文化日</span><span class="meeting_time">2015-8-8</span></li>
+	    	</ul>
+	    	<ul class="meeting_info_ul">
+	    		<li><span class="meeting_title">2015年深圳第18届中华文化日</span><div class="exm_state3">过期</div></li>
+	    		<li><h5>摘要</h5><span class="meeting_date">2015年深圳第18届中华文化日</span><span class="meeting_time">2015-8-8</span></li>
+	    	</ul>
+	    </div>
+	  </div>
+
+	</div>
+	<script src="jquery-1.11.3.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(".meeting_date").each(function(){
+		var maxwidth=10;
+		if($(this).text().length>maxwidth){
+		$(this).text($(this).text().substring(0,maxwidth));
+		$(this).html($(this).html()+'...');
+		}
+		});
+		$('#myTabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+		$('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+		$('#myTabs a:first').tab('show') // Select first tab
+		$('#myTabs a:last').tab('show') // Select last tab
+		$('#myTabs li:eq(2) a').tab('show') 
+	</script>
+</body>
+</html>

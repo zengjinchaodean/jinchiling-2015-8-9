@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="css/meeting_list.css"> -->
+	<link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+	<title>考试详情</title>
+	</head>
+
+	<body>
+	<nav class="navbar navbar-default " style="background-color: #081b26;">
+		  <div class="container home_top">
+		  <a href="javascript:history.go(-1);">
+		  	<span class="glyphicon glyphicon-menu-left" style="left:1rem;color:#fff;"></span>
+		  </a>
+		   考试
+		  </div>
+	</nav>
+	<div class="meeting-top">
+
+
+	  <!-- Tab panes -->
+	  <div class="tab-content meeting_content">
+	    <div role="tabpanel" class="tab-pane active" id="home">
+	    	<h3>未签会议列表显示元素:</h3>
+	    	<ul>
+	    		<li>1)&nbsp会议标题</li>
+	    		<li>2)&nbsp会议时间</li>
+	    		<li>3)&nbsp会议签到状态</li>
+	    		<li>4)&nbsp会议摘要</li>
+	    	</ul>
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="profile">
+	    	<h3>已签会议列表显示元素:</h3>
+	    	<ul>
+	    		<li>1)&nbsp会议标题</li>
+	    		<li>2)&nbsp会议时间</li>
+	    		<li>3)&nbsp会议签到状态</li>
+	    		<li>4)&nbsp会议摘要</li>
+	    	</ul>
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="messages">
+	    	<h3>全部会议列表显示元素:</h3>
+	    	<ul>
+	    		<li>1)&nbsp会议标题</li>
+	    		<li>2)&nbsp会议时间</li>
+	    		<li>3)&nbsp会议签到状态</li>
+	    		<li>4)&nbsp会议摘要</li>
+	    	</ul>
+	    </div>
+	  </div>
+
+	</div>
+
+	<script src="jquery-1.11.3.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$('#myTabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+		$('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+		$('#myTabs a:first').tab('show') // Select first tab
+		$('#myTabs a:last').tab('show') // Select last tab
+		$('#myTabs li:eq(2) a').tab('show') 
+	</script>
+</body>
+</html>
