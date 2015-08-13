@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <link rel="stylesheet" type="text/css" href="css/meeting_list.css"> -->
+	<link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+	<title>会议详情</title>
+	</head>
+
+	<body>
+	<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #122539;position: relative;">
+		  <div class="container home_top">
+		  <a href="javascript:history.go(-1);">
+		  	<span class="glyphicon glyphicon-menu-left" style="left:1rem;color:#fff;"></span>
+		  </a>
+		   会议
+		  </div>
+	</nav>
+		<div class="container meeting_info_title">
+			<div class="row">
+				  <div class="col-md-12"><span>2015年深圳第18届中华文化日</span><img src="images/state_image.png">签到</div>
+				  <div class="col-md-12"><span style="color:#999;">2015-8-6</span></div>
+			</div>
+		</div>	
+		<div class="container meeting_info_content">       
+			<div class="row">
+					<div class="col-md-12">
+					三角形构图是平衡版面的常见手法，尤其是
+					在竖版书右翻的页面里，将三角形的底边配置在
+					版面上端的位置，顶点则置于底端位置，这种以
+					倒三角形的构图来决定图片与标题位置的方法三
+					角形构图是平衡版面。<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三角形构图是平衡版面的常见手法，尤其是
+					在竖版书右翻的页面里，将三角形的底边配置在
+					版面上端的位置，顶点则置于底端位置，这种以
+					倒三角形的构图来决定图片与标题位置的方法三
+					角形构图是平衡版面。
+					</div>
+			</div>
+		</div>
+
+		<div class="meeting_info_tabs">
+
+		  <!-- Nav tabs -->
+		  <ul class="nav nav-tabs" role="tablist" style="width:100%;">
+		    <li role="presentation" class="active" style="width:33%;"><a href="#home" style="border-bottom: 0px;" aria-controls="home" role="tab" data-toggle="tab"><img src="images/meeting_people.png" id="meeting_info_tabs_img"/>参会人员</a></li>
+		    <li role="presentation" style="width:33%;"><a href="#profile" style="border-bottom: 0px;" aria-controls="profile" role="tab" data-toggle="tab"><img src="images/meeting_situation.png" id="meeting_info_tabs_img"/>签到情况</a></li>
+		    <li role="presentation" style="width:33%;"><a href="#messages" style="border-bottom: 0px;" aria-controls="messages" role="tab" data-toggle="tab"><img src="images/meeting_arrive.png" id="meeting_info_tabs_img"/>签到状态</a></li>
+		  </ul>
+
+		  <!-- Tab panes -->
+		  <div class="tab-content" style="background-color: #e5eef7;">
+		    <div role="tabpanel" class="tab-pane active" id="home">...</div>
+		    <div role="tabpanel" class="tab-pane" id="profile">...</div>
+		    <div role="tabpanel" class="tab-pane" id="messages">...</div>
+		  </div>
+
+		</div>
+
+	<script src="jquery-1.11.3.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$('#myTabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+		$('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+		$('#myTabs a:first').tab('show') // Select first tab
+		$('#myTabs a:last').tab('show') // Select last tab
+		$('#myTabs li:eq(2) a').tab('show') 
+	</script>
+
+</body>
+</html>
