@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0">
+	<!-- <link rel="stylesheet" type="text/css" href="css/meeting_list.css"> -->
+	<link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+	<title>考试详情</title>
+	</head>
+
+	<body>
+	<!--header start-->
+	<nav class="navbar navbar-default " style="background-color: #122539;">
+		  <div class="container home_top" style="font-size: 1.6rem;">
+		  <a href="javascript:history.go(-1);">
+		  	<span class="glyphicon glyphicon-menu-left" style="left:1rem;color:#fff;"></span>
+		  </a>
+		   财务管理环节
+		  </div>
+	</nav>
+	<!--header end-->
+	<!--content start-->
+	<!--题目类型-->
+	<div class="container exm">
+		<div class="row">
+			<div class="col-md-12 exm_title">
+				<div class="exm_image">选择题</div>
+				<span>请根据以下的题目选择正确的答案</span>	
+			</div>
+		</div>
+	</div>
+	<!--题目开始-->
+	<div class="choose">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 exm_title">
+						<span class="question_title">第<span>1<span>题:财物活动包括（）等一系列行为</span>				
+					</div>
+				</div>
+		</div>
+		<div class="exm_choose">
+				<ul class="answer_pre">
+					<li class="answer"><div class="exm_choose_font" style="color:#fff;">A</div>投资</li>
+					<li class="answer"><div class="exm_choose_font" style="color:#fff;">B</div>资金营运</li>
+					<li class="answer"><div class="exm_choose_font" style="color:#fff;">C</div>筹资</li>
+					<li class="answer"><div class="exm_choose_font" style="color:#fff;">D</div>资金分配</li>
+				</ul>	
+		</div>
+	</div>
+
+	<div class="choose">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 exm_title">
+						<span class="question_title">第1题:财物活动包括（）等一系列行为</span>				
+					</div>
+				</div>
+		</div>
+		<div class="exm_choose">
+				<ul class="answer_pre">
+					<li class="answer"><div class="exm_choose_font" style="color:#fff;">A</div>投资</li>
+					<li class="answer"><div class="exm_choose_font" style="color:#fff;">B</div>资金营运</li>
+					<li class="answer"><div class="exm_choose_font" style="color:#fff;">C</div>筹资</li>
+					<li class="answer"><div class="exm_choose_font" style="color:#fff;">D</div>资金分配</li>
+				</ul>	
+		</div>
+	</div>
+
+	<div class="container exm">
+		<div class="row">
+			<div class="col-md-12 exm_title">
+				<div class="exm_image">判断题</div>
+				<span>在正确的题目后选择对与错</span>	
+			</div>
+		</div>
+	</div>
+	<div class="choose">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 exm_title">
+						<span class="question_title">第1题:财物活动包括（）等一系列行为</span>				
+					</div>
+				</div>
+		</div>
+		<div class="exm_choose">
+				<ul class="answer_pre">
+					<li class="answer"><div class="exm_choose_font" style="color:#fff;">A</div>对</li>
+					<li class="answer"><div class="exm_choose_font" style="color:#fff;">B</div>错</li>
+				</ul>	
+		</div>
+	</div>
+
+	<div class="choose">
+		<div class="container">
+				<div class="row">
+					<div class="col-md-12 exm_title">
+						<span class="question_title">第1题:财物活动包括（）等一系列行为</span>				
+					</div>
+				</div>
+		</div>
+		<div class="exm_choose">
+				<ul class="answer_pre">
+					<li class="answer"><div class="exm_choose_font" style="color:#fff;">A</div>对</li>
+					<li class="answer"><div class="exm_choose_font" style="color:#fff;">B</div>错</li>
+				</ul>	
+		</div>
+	</div>
+
+
+
+	<div class="per_info_change_buttun">提交</div>
+
+	<!--考试成绩弹层-->
+	<!-- <div class="container exm_total"  >
+		<div class="row" style="width:90%;margin-left: 1rem;">
+			<div class="col-md-12 exm_total_up">
+				你的总分：<span>89</span>分
+			</div>
+			<div class="col-md-12 exm_total_down">
+				恭喜你，通过本次考核
+			</div>
+		</div>
+	</div> -->
+	<!--content end-->
+	<!--footer start-->
+	<!--选择上一题下一题-->
+	<!-- <div class="container " style="width: 90%;">
+		<div class="row exm_down nav navbar-nav navbar-fixed-bottom">			
+			<div class="col-md-6 exm_pre">
+				<span class="glyphicon glyphicon-chevron-left" style="left:1rem;"></span>
+				上一题
+			</div>
+			<div class="col-md-6 exm_next">
+				下一题
+				<span class="glyphicon glyphicon-chevron-right" style="right:1rem;"></span>
+			</div>
+		</div>
+	</div> 
+	<div class="exm_pencent nav navbar-nav navbar-fixed-bottom">1/100</div>
+	-->
+	<!--footer end-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(".answer").click(function(){
+			//console.log($(this).parent('.answer_pre').html());
+			$(this).parent(".answer_pre").find("div").removeClass("exm_choose_li");
+			$(this).parent(".answer_pre").find(".answer").css("color","#000");
+			$(this).find("div").addClass(" exm_choose_li");
+			$(this).css("color","#6dbae7");
+			});
+	</script>
+
+
+</body>
+</html>
