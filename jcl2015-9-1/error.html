@@ -1,0 +1,66 @@
+{__NOLAYOUT__}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0">
+	<style type="text/css">
+	body{
+		position: relative;
+		background-image: url(images/feedback_background.png);
+		background-repeat: no-repeat;		
+		-moz-background-size : cover;
+		background-size : cover;
+		font-size: 16px;
+	}
+	.flag{
+		position: absolute;
+	    margin-left: -4em;
+	    left: 45%;
+	    top: 7em;
+	    text-align: center;
+	}
+	.flag img{
+		width: 50%;
+	}
+	.flag p{
+		color: #375138;
+	}
+	a{
+		text-decoration: none;
+	}
+	.flag b{
+		color: #e44c4c;
+		font-size: 2em;
+	}
+	</style>
+	<title>跳转提示</title>
+	</head>
+		<div class="flag">
+			<img src="images/feedback_flag.png">
+			<?php if(isset($message)) {?>
+			<p class="success"><strong><?php echo($message); ?></strong></p>
+			<?php }else{?>
+			<p class="error"><strong><?php echo($error); ?></strong></p>
+			<?php }?>
+			<p>页面自动<a id="href" href="<?php echo($jumpUrl); ?>">跳转</a>，等待时间</p>
+			<b id="wait"><?php echo($waitSecond); ?></b>
+		</div>
+
+	<body>
+    
+     <script type="text/javascript">
+     (function(){
+	     var wait = document.getElementById('wait'),href = document.getElementById('href').href;
+	     var interval = setInterval(function(){
+	     	var time = --wait.innerHTML;
+	     	if(time <= 0) {
+	     		location.href = href;
+	     		clearInterval(interval);
+	     	};
+	     }, 1000);
+     })();
+     </script>
+</body>
+</html>
