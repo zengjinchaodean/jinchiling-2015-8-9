@@ -1,0 +1,60 @@
+.pc_top{
+	background-image: url(../../images/per_bg.png);
+	background-size: cover;
+}
+.pc_info_name_down {
+    background-color: #fff;
+    width: 50%;
+    height: 5rem;
+    text-align: center;
+    line-height: 3rem;
+    color: #000;
+    font-size: 1.5rem;
+    border-top: 1px solid #e5e5e5;
+}
+.pc_info_name_down_border{
+	position: absolute;
+    background-color: #e5e5e5;
+    top: 11px;
+    right: 0;
+    height: 3rem;
+    width: 1px;
+}
+.pc_info_name_down_per{
+	color: #066292;
+	font-weight: 500;
+	display: block;
+}
+.pc_info_name_down_time{
+	display: inline-block;
+	padding: 0;
+	color: #999999;
+	font-size: 1rem;
+}
+a{
+	display: block;
+}
+
+.pc_info_name_function {
+	border:0;
+}
+.pc_info_bottom_border{
+	border-bottom: 1px solid #ededed;
+	width: 90%;
+	margin: 0 auto;
+	height: 3.5rem;
+}
+.pc_top_face {
+    position: relative;
+    margin-left: -3rem;
+    top: 0.5rem;
+    left: 50%;
+    height: 6rem;
+    -webkit-border-radius: 9rem;
+    border-radius: 9rem;
+    border: 5px solid #fff;
+}
+.pc_top_name{
+	color: #332f2f;
+	font-size: 1.2rem;
+}
