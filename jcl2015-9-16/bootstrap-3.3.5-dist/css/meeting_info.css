@@ -1,0 +1,27 @@
+.meeting_info_feedback {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #e8e8e8;
+    color: #f35757;
+    padding: 0.5rem 0.2rem 0.5rem 0.5rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    -webkit-border-radius: 0px;
+    border-radius: 0px; 
+    text-align: center;
+    height: 4rem;
+    line-height: 3rem;
+}
+.meeting_list_row{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.meeting_info_time{
+    margin-left: 1rem;
+}
+.meeting_info_time span{
+    color:#999;
+    font-size:1.4rem;
+    margin-right: 1rem;
+}

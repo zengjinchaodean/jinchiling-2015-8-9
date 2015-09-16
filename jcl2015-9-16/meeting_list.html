@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0">
+	<link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+	<link href="bootstrap-3.3.5-dist/css/meeting_list.css" rel="stylesheet">
+	<style type="text/css">
+	a{
+		display: block;
+		color: #a4a3a1;
+	}
+	</style>
+	<title>会议列表</title>
+	</head>
+
+	<body style="background-color:#e5e5e5;">
+	<nav class="navbar navbar-default " style="background-color: #122539;">
+		  <div class="container home_top">
+		  <a href="javascript:history.go(-1);">
+		  	<span class="glyphicon glyphicon-menu-left" style="left:1rem;color:#fff;"></span>
+		  </a>
+		   会议
+		  </div>
+	</nav>	
+	<div class="meeting-top">
+
+	  <!-- Nav tabs -->
+	  <ul class="nav nav-tabs meeting-top-list" role="tablist" style="width: 100%;">
+	    <li role="presentation" class="active col-md-4" style="width: 33%;">
+		    <a href="#home" aria-controls="home" role="tab" data-toggle="tab" class=" a1 meeting_top_tab">
+		    未签会议
+		    </a>
+	    </li>
+	    <li role="presentation" class="li-a2 col-md-4" style="width: 34%;position:relative;">
+		    <div class="meeting_border_left"></div>
+		    <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab" class=" a2 meeting_top_tab">
+		    
+		    已签会议
+		    
+		    </a>
+		    <div class="meeting_border_right"></div>
+	    </li>
+	    <li role="presentation" class="col-md-4" style="width: 33%;">
+		    <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab" class=" a3 meeting_top_tab">
+		    全部会议
+		    </a>
+	    </li>
+	  </ul>
+
+	  <!-- Tab panes -->
+	  <div class="tab-content meeting_content">
+	    <div role="tabpanel" class="tab-pane active" id="home">
+	    	<ul class="meeting_info_ul">
+	    		<a href="meeting_info.html">
+		    		<li>
+		    			<img src="images/meeting_start.png" class="meeting_info_state">
+		    			<span class="meeting_title">2015年深圳第18届中华文化日</span>
+		    			<span class="meeting_title_time">15:30</span>								
+		    		</li>
+					<li><span class="meeting_title_state">未签到</span>
+						<dl>
+							<dt>开始时间:</dt>
+							<dd>15:30</dd>
+							<dt>结束时间:</dt>
+							<dd>15:30</dd>
+						</dl>						
+					</li>	
+				</a>
+	    	</ul>
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="profile">
+	        	<ul class="meeting_info_ul">
+	        		<a href="meeting_info.html">
+	    	    		<li>
+	    	    			<img src="images/meeting_now.png" class="meeting_info_state">
+	    	    			<span class="meeting_title">2015年深圳第18届中华文化日</span>
+	    	    			<span class="meeting_title_time">15:30</span>								
+	    	    		</li>
+	    				<li><span class="meeting_title_state1">已签到</span>
+	    					<dl>
+	    						<dt>开始时间:</dt>
+	    						<dd>15:30</dd>
+	    						<dt>结束时间:</dt>
+	    						<dd>15:30</dd>
+	    					</dl>						
+	    				</li>	
+	    			</a>
+	        	</ul>
+	    </div>
+	    <div role="tabpanel" class="tab-pane" id="messages">
+	        	<ul class="meeting_info_ul">
+	        		<a href="meeting_info.html">
+	    	    		<li>
+	    	    			<img src="images/meeting_start.png" class="meeting_info_state">
+	    	    			<span class="meeting_title">2015年深圳第18届中华文化日</span>
+	    	    			<span class="meeting_title_time">15:30</span>								
+	    	    		</li>
+	    				<li><span class="meeting_title_state">未签到</span>
+	    					<dl>
+	    						<dt>开始时间:</dt>
+	    						<dd>15:30</dd>
+	    						<dt>结束时间:</dt>
+	    						<dd>15:30</dd>
+	    					</dl>						
+	    				</li>	
+	    			</a>
+	        	</ul>
+    	    	<ul class="meeting_info_ul">
+    	    		<a href="meeting_info.html">
+    		    		<li>
+    		    			<img src="images/meeting_now.png" class="meeting_info_state">
+    		    			<span class="meeting_title">2015年深圳第18届中华文化日</span>
+    		    			<span class="meeting_title_time">15:30</span>								
+    		    		</li>
+    					<li><span class="meeting_title_state1">已签到</span>
+    						<dl>
+    							<dt>开始时间:</dt>
+    							<dd>15:30</dd>
+    							<dt>结束时间:</dt>
+    							<dd>15:30</dd>
+    						</dl>						
+    					</li>	
+    				</a>
+    	    	</ul>
+    	    	<ul class="meeting_info_ul">
+    	    		<a href="meeting_info.html">
+    		    		<li>
+    		    			<img src="images/meeting_end.png" class="meeting_info_state">
+    		    			<span class="meeting_title">2015年深圳第18届中华文化日</span>
+    		    			<span class="meeting_title_time">15:30</span>								
+    		    		</li>
+    					<li><span class="meeting_title_state1">已签到</span>
+    						<dl>
+    							<dt>开始时间:</dt>
+    							<dd>15:30</dd>
+    							<dt>结束时间:</dt>
+    							<dd>15:30</dd>
+    						</dl>						
+    					</li>	
+    				</a>
+    	    	</ul>
+    	    	<ul class="meeting_info_ul">
+    	    		<a href="meeting_info.html">
+    		    		<li>
+    		    			<img src="images/meeting_end.png" class="meeting_info_state">
+    		    			<span class="meeting_title">2015年深圳第18届中华文化日</span>
+    		    			<span class="meeting_title_time">15:30</span>								
+    		    		</li>
+    					<li><span class="meeting_title_state1">已签到</span>
+    						<dl>
+    							<dt>开始时间:</dt>
+    							<dd>15:30</dd>
+    							<dt>结束时间:</dt>
+    							<dd>15:30</dd>
+    						</dl>						
+    					</li>	
+    				</a>
+    	    	</ul>
+	    </div>
+	  </div>
+
+	</div>
+
+
+	<div class="container">
+		  <ul class="nav navbar-nav navbar-fixed-bottom w bgf8 index-footer">
+	           <li class="col-md-3" style="width: 25%;"> <a href="index.html"><img src="images/home3.png" class="footer_images_1" /><h4>首页</h4></a></li>
+	            <li class="col-md-3 on" style="width: 25%;"><a href="meeting_list.html"><img src="images/meeting.png" class="footer_images_1" /><h4>会议</h4></a></li>
+	           <!--  <li class="col-md-3" style="width: 20%;"><a href="#"><img src="images/travel.png" class="footer_images_1" /><h4>旅游</h4></a></li> -->
+	           <li class="col-md-3" style="width: 25%;"><a href="construction.html"><img src="images/patrol3.png" class="footer_images_1" /><h4>巡检</h4></a></li>
+	            <li class="col-md-3" style="width: 25%;"><a href="per_center.html"><img src="images/per3.png" class="footer_images_1" /><h4>个人中心</h4></a></li>
+	            <!-- <li class="col-md-3" style="width: 25%;"><a href="construction.html"><img src="images/more3.png" class="footer_images_1"/><h4>更多</h4></a></li> -->
+          </ul>
+     </div>
+
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+
+	<script type="text/javascript">
+		$(".meeting_date").each(function(){
+			var maxwidth=15;
+			if($(this).text().length>maxwidth){
+				$(this).text($(this).text().substring(0,maxwidth));
+				$(this).html($(this).html()+'...');
+			}
+		});
+		$('#myTabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+		$('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+		$('#myTabs a:first').tab('show') // Select first tab
+		$('#myTabs a:last').tab('show') // Select last tab
+		$('#myTabs li:eq(2) a').tab('show') 
+	</script>
+</body>
+</html>

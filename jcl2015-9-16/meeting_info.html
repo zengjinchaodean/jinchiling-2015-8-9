@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0">
+	<!-- <link rel="stylesheet" type="text/css" href="css/meeting_list.css"> -->
+	<link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+	<link href="bootstrap-3.3.5-dist/css/meeting_info.css" rel="stylesheet">
+	<style type="text/css">
+
+	.col-md-12{
+		width: 100%;
+	}
+	</style>
+	<title>会议详情</title>
+	</head>
+
+	<body>
+	<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #122539;position: relative;">
+		  <div class="container home_top">
+		  <a href="javascript:history.go(-1);">
+		  	<span class="glyphicon glyphicon-menu-left" style="left:1rem;color:#fff;"></span>
+		  </a>
+		   会议
+		  </div>
+	</nav>
+		<div class="container meeting_info_title">
+			<div class="row" style="overflow:hidden;">
+				  <div class="col-md-12" style="padding-top: 0.5rem;">
+				  <span>2015年深圳第18届中华文化日</span>
+				  </div>
+				  <div class="col-md-12 meeting_info_time">
+					  开始时间:
+					  <span>
+					  13:30
+					  </span>
+					  结束时间:
+					  <span>
+					  15:30
+					  </span>
+				  </div>
+			</div>
+		</div>	
+		<div class="container meeting_info_content">       
+			<div class="row">
+					<div class="col-md-12" style="font-size:1.6rem;">
+					三角形构图是平衡版面的常见手法，尤其是
+					在竖版书右翻的页面里，将三角形的底边配置在
+					版面上端的位置，顶点则置于底端位置，这种以
+					倒三角形的构图来决定图片与标题位置的方法三
+					角形构图是平衡版面。<br/>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;三角形构图是平衡版面的常见手法，尤其是
+					在竖版书右翻的页面里，将三角形的底边配置在
+					版面上端的位置，顶点则置于底端位置，这种以
+					倒三角形的构图来决定图片与标题位置的方法三
+					角形构图是平衡版面。
+					</div>
+			</div>
+		</div>
+		
+		<div class="container" style="width:100%;margin-top:2rem;border-top:1px solid #e5e5e5;padding-top:2rem;">       
+			<div class="row meeting_list_row">
+					<div class="col-md-6" style="width:50%;border-right:1px solid #c8c8c8;">
+						<a href="feedback.html"><div class="meeting_info_feedback"><img src="images/meeting_info_feedback.png" />意见反馈</div></a>
+					</div>
+					<div class="col-md-6" style="width:50%;">
+						<a href="exm.html"><div class="meeting_info_feedback"><img src="images/meeting_info_exm.png" />立即考试</div></a>
+					</div>
+			</div>
+		</div>
+
+
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$('#myTabs a').click(function (e) {
+		  e.preventDefault()
+		  $(this).tab('show')
+		})
+		$('#myTabs a[href="#profile"]').tab('show') // Select tab by name
+		$('#myTabs a:first').tab('show') // Select first tab
+		$('#myTabs a:last').tab('show') // Select last tab
+		$('#myTabs li:eq(2) a').tab('show') 
+	</script>
+
+</body>
+</html>
