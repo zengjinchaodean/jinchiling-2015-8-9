@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0, user-scalable=0">
+	<!-- <link rel="stylesheet" type="text/css" href="css/meeting_list.css"> -->
+	<link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+	<link href="bootstrap-3.3.5-dist/css/attendance_info.css" rel="stylesheet">
+	<title>出勤率</title>
+	</head>
+	
+	<body>
+	<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #122539;position: relative;">
+		  <div class="container home_top">
+		  <a href="javascript:history.go(-1);">
+		  	<span class="glyphicon glyphicon-menu-left" style="left:1rem;color:#fff;"></span>
+		  </a>
+		   出勤率
+		  </div>
+	</nav>
+	<div class="dropdown">
+	<ul class="dropdown_title">
+	    <li class="dropdown_title_li">
+	      <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown_button">
+	        时间周期
+	        <span class="caret"></span>
+	      </button>
+	      <ul class="dropdown-menu " aria-labelledby="dLabel">
+	        <li role="presentation"><span>全部</span></li> 
+	        <li role="presentation"><span>今天</span></li>  
+	        <li role="presentation"><span>一周内</span></li>  
+	        <li role="presentation"><span>一个月内</span></li>  
+	        <li role="presentation"  style="border:none;"><span>一年内</span></li> 
+	      </ul>
+	    </li>
+
+	    <li class="dropdown_title_li">
+	    <div class="gray_block1"></div>
+	      <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown_button">
+	        签到状态
+	        <span class="caret"></span>
+	      </button>
+	      <ul class="dropdown-menu" aria-labelledby="dLabel">
+	        <li role="presentation"><span>全部</span></li> 
+	        <li role="presentation"><span>未签到</span></li>  
+	        <li role="presentation"><span>已签到</span></li>  
+	        <li role="presentation" style="border:none;"><span>已过期</span></li>
+	      </ul>
+	      <div class="gray_block2"></div>
+	    </li>
+	</ul>
+	</div>
+	<!--主要内容-->
+	<div class="container main_content">
+	  <div class="row">
+	    <div class="col-md-12 main_content_list">2015年深圳第18届中华文化日
+	    <div class="meeting_state_list">签到</div>
+	    <span class="main_content_time">09-21</span>
+	    </div>
+	    <div class="col-md-12 main_content_list">2015年深圳第18届中华文化日
+	    <div class="meeting_state_list1">未签到</div>
+	    <span class="main_content_time">09-21</span>
+	    </div>
+	    <div class="col-md-12 main_content_list">2015年深圳第18届中华文化日
+	    <div class="meeting_state_list1">未签到</div>
+	    <span class="main_content_time">09-21</span>
+	    </div>
+	    <div class="col-md-12 main_content_list">2015年深圳第18届中华文化日
+	    <div class="meeting_state_list1">未签到</div>
+	    <span class="main_content_time">09-21</span>
+	    </div>
+	    <div class="col-md-12 main_content_list">2015年深圳第18届中华文化日
+	    <div class="meeting_state_list1">未签到</div>
+	    <span class="main_content_time">09-21</span>
+	    </div>
+	  </div>
+	</div>
+
+
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+
+	</script>
+
+</body>
+</html>

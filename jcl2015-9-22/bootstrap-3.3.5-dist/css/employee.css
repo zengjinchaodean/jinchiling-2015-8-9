@@ -1,0 +1,79 @@
+.user_icon img{
+	width: 7rem;
+}
+.user_icon{
+	position: absolute;
+	width: 7rem;
+	top: 10%;
+	left: 49%;
+	margin-left: -3rem;
+}
+.input_block{
+	position: absolute;
+	width: 18.6rem;
+	top: 33%;
+	left: 51%;
+	margin-left: -9.3rem;
+}
+.tel{
+	background-color: #e6e6e6;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	height: 3rem;
+}
+.per_name{
+	margin-top: 2rem;
+	background-color: #e6e6e6;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	height: 3rem;
+}
+input{
+	text-align: left;
+	border: 0;
+	height: 2rem;
+	background-color: #e6e6e6;
+	margin-top: 0.5rem;
+}
+input::-moz-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input::inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input::-moz-input-placeholder{text-align: left;}
+.input_block img{
+	margin-left: 1rem;
+	width: 10%;
+}
+input::-webkit-input-placeholder{text-align: left;}
+.input_block img{
+	margin-left: 1rem;
+	width: 10%;
+}
+input::input-placeholder{text-align: left;}
+.input_block img{
+	margin-left: 1rem;
+	width: 10%;
+}
+.button_sure{
+	margin-top: 2rem;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	background-color:#31a6e2;
+	height: 3rem;
+}
+button{
+	font-size: 1.2rem;
+	margin-top: 0.5rem;
+	color: #fff;
+	width: 100%;
+	background-color: #31a6e2;
+	border:0;
+}

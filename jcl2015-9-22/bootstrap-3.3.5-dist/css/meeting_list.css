@@ -1,0 +1,113 @@
+.end_time{
+	margin-right: 1rem;
+}
+.meeting_state_block1{
+	font-size: 1.2rem;
+    right: 1rem;
+    top: 5rem;
+    position: absolute;
+    display: inline-block;
+}
+.meeting_state5{
+	background-color: #000000;
+	display: inline-block;
+	color: #fff;
+	font-size: 1.2rem;
+	right: 1.6rem;
+	position: absolute;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	width: 4rem;
+	text-align: center;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+	margin: 0 auto;
+	height: 2rem;
+	margin-top: 0.2rem;
+	line-height: 2rem;
+	width: 80%;
+	color: #174372;
+	cursor: default;
+	background-color: #a6d1ff;
+	border-radius: 19px;
+	border-left: 0px;
+	border-right: 0px;
+	border-top: 0px;
+	/* border-bottom-color: transparent; */
+	/* border-color: transparent; */
+}
+.meeting_border_right {
+	margin-top: 0rem;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    height: 1.6rem;
+    width: 1px;
+    background-color: #b2b2b2;
+}
+.meeting-top a{
+	font-size: 1.6rem;
+}
+.meeting-top-list{
+	padding-top: 0.5rem;
+}
+.meeting_content .meeting_info_ul{
+	border-top: 1px solid #d6d6d6;
+	border-bottom: 1px solid #d6d6d6;
+}
+.meeting_title{
+	color: #282928;
+	margin-left: 2rem;
+}
+.meeting_info_state{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 4rem;
+}
+.meeting_info_ul li:first-child {
+     border-bottom: none; 
+    padding-bottom: 0;
+}
+.meeting_title_time{
+	margin-top: 0.5rem;
+	margin-right: 1rem;
+	float: right;
+	color: #999999;
+	font-size: 1rem;
+}
+dt{
+	font-weight: normal;
+}
+dt, dd {
+    display: inline-block;
+}
+dl {
+	display: inline-block;
+    padding: 0;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-bottom: 0;
+    font-size: 1.2rem;
+}
+.meeting_info_ul li:nth-child(2) {
+    padding: 0rem;
+    position: relative;
+}
+.meeting_title_state{
+	position: absolute;
+	right: 1rem;
+	top:1rem;
+	color: #d60b0b;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+.meeting_title_state1{
+	position: absolute;
+	right: 1rem;
+	top:1rem;
+	color: #4c4c4c;
+	font-size: 1.2rem;
+	font-weight: 600;
+}
